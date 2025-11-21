@@ -1,7 +1,7 @@
 #!/bin/bash
-
-CHATID="2052109732"
-KEY="8011647678:AAGuJZ8k-GwRV9Zu1HfcLgGUsJM4W-etHHQ"
+#Aren
+CHATID="6430177985"
+KEY="8129406129:AAEEnwkxkGXy6ZJT5Gxg1JvUAtkf4eAVk6M"
 export TIME="10"
 export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#sgdo
 CHATID="6430177985"
 KEY="7222221800:AAGt0Gc3ruf6kSt7oOi-AdPfdCp_wLaFgI4"
 export TIME="10"

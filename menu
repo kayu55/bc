@@ -148,8 +148,7 @@ echo -e "${GREEN}  ${RED}▁ ${CYAN}▂ ${GREEN}▄ ${ORANGE}▅${PINK} ▆${GRE
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -e " ${BICyan}┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BICyan}│ ${NC}SCRIT PREMIUM HAPPY NEWYEAR 2026  ${NC}"
-echo -e " ${BICyan}│ ${NC}SALAM SEJAHTERA RAHAYU SAGUNG DUMADI  ${NC}"
+echo -e " ${BICyan}│ ${ORANGE} Version       : ${NC}PREMIUM 2026 V 8.0  ${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo
 read -p " Select menu : " opt

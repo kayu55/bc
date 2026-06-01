@@ -31,7 +31,6 @@ wget -O backup "raw.githubusercontent.com/kayu55/bc/main/sg/backup.sh" && chmod 
 
 ````
 wget -O backup "raw.githubusercontent.com/kayu55/bc/main/rjs/backup.sh" && chmod +x backup
-
 ````
 
 ### MENU

@@ -109,12 +109,6 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 clear
 
-# STATUS SERVICE OPENVPN
-#if [[ $oovpn == "active" ]]; then
-#  status_openvpn=" ${GREEN}Running ${NC}( No Error )"
-#else
-#  status_openvpn="${RED}  Not Running ${NC}  ( Error )"
-#fi
 
 # STATUS SERVICE  SSH 
 if [[ $ssh_service == "running" ]]; then 
@@ -123,12 +117,6 @@ else
    status_ssh="${RED}  Not Running ${NC}  ( Error )"
 fi
 
-# STATUS SERVICE  SQUID 
-#if [[ $squid_service == "running" ]]; then 
-#   status_squid=" ${GREEN}Running ${NC}( No Error )"
-#else
-#   status_squid="${RED}  Not Running ${NC}  ( Error )"
-#fi
 
 # STATUS SERVICE  VNSTAT 
 if [[ $vnstat_service == "running" ]]; then 
@@ -184,18 +172,7 @@ if [[ $trojan_server == "running" ]]; then
 else
    status_virus_trojan="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
-# Status Service Trojan GO
-#if [[ $strgo == "active" ]]; then
-#  status_trgo=" ${GREEN}Running ${NC}( No Error )${NC}"
-#else
-#  status_trgo="${RED}  Not Running ${NC}  ( Error )${NC}"
-#fi
-# STATUS SERVICE TROJAN GFW
-#if [[ $trojangfw_server == "running" ]]; then 
-#   status_virus_trojangfw=" ${GREEN}Running ${NC}( No Error )${NC}"
-#else
-#   status_virus_trojangfw="${RED}  Not Running ${NC}  ( Error )${NC}"
-#fi
+
 # STATUS SERVICE DROPBEAR
 if [[ $dropbear_status == "running" ]]; then 
    status_beruangjatuh=" ${GREEN}Running${NC} ( No Error )${NC}"

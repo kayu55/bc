@@ -202,9 +202,9 @@ fi
 # // SSH Websocket Proxy
 ssh_ws=$( systemctl status ws | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
-    status_ws_epro="${GREEN}[ON]$NC${hijau} │$NC"
+    status_ws_epro=" ${GREEN}Running ${NC}( No Error )${NC}"
 else
-    status_ws_epro="${RED}[OFF]${NC} "
+    status_ws_epro="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
 
 # STATUS SERVICE  SSH UDP 

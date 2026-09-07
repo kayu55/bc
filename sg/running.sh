@@ -88,7 +88,7 @@ fail2ban_service=$(/etc/init.d/fail2ban status | grep Active | awk '{print $3}' 
 #trgo="$(systemctl show trojan-go.service --no-page)"                                      
 #strgo=$(echo "${trgo}" | grep 'ActiveState=' | cut -f2 -d=)  
 #sswg=$(systemctl status wg-quick@wg0 | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
-wstls=$(systemctl status ws-stunnel.service | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+#wstls=$(systemctl status ws-stunnel.service | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 #UdpSSH=$(systemctl status udp-custom | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 #wsdrop=$(systemctl status ws-dropbear.service | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 #wsovpn=$(systemctl status ws-ovpn | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
@@ -199,6 +199,13 @@ if [[ $wsdrop == "running" ]]; then
 else
    swsdrop="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
+# // SSH Websocket Proxy
+ssh_ws=$( systemctl status ws | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+if [[ $ssh_ws == "running" ]]; then
+    status_ws_epro="${GREEN}[ON]$NC${hijau} │$NC"
+else
+    status_ws_epro="${RED}[OFF]${NC} "
+fi
 
 # STATUS SERVICE  SSH UDP 
 #if [[ $UdpSSH == "running" ]]; then 
@@ -208,8 +215,8 @@ fi
 #fi
 
 # TOTAL RAM
-total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
-totalram=$(($total_ram/1024))
+#total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
+#totalram=$(($total_ram/1024))
 
 # TIPE PROCESSOR
 #totalcore="$(grep -c "^processor" /proc/cpuinfo)" 
@@ -256,8 +263,8 @@ echo -e " XRAY Vless TLS          :$status_tls_vless"
 echo -e " XRAY Vless None TLS     :$status_nontls_vless"
 echo -e " XRAY Trojan             :$status_virus_trojan"
 #echo -e " Trojan GFW               :$status_virus_trojangfw"
-echo -e " Websocket TLS           :$swstls"
-echo -e " Websocket None TLS      :$swstls"
+echo -e " Websocket               :$status_ws_epro"
+#echo -e " Websocket None TLS      :$swstls"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo ""
 echo " Sc By Arya Blitar "

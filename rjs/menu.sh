@@ -35,44 +35,44 @@ stat=-f7
 fi
 ssh=$(service ssh status | grep active | cut -d ' ' $stat)
 if [ "$ssh" = "active" ]; then
-ressh="$NC\033[42mON${NC}"
+ressh="\033[47mON${NC}"
 else
 ressh="${red}OFF${NC}"
 fi
 sshstunel=$(service stunnel5 status | grep active | cut -d ' ' $stat)
 if [ "$sshstunel" = "active" ]; then
-resst="$NC\033[42mON${NC}"
+resst="\033[47mON${NC}"
 else
 resst="${red}OFF${NC}"
 fi
 sshws=$(service ws-stunnel status | grep active | cut -d ' ' $stat)
 if [ "$sshws" = "active" ]; then
-ressshws="$NC\033[42mON${NC}"
+ressshws="\033[47mON${NC}"
 else
 ressshws="${red}OFF${NC}"
 fi
 ngx=$(service nginx status | grep active | cut -d ' ' $stat)
 if [ "$ngx" = "active" ]; then
-resngx="$NC\033[42mON${NC}"
+resngx="\033[47mON${NC}"
 else
 resngx="${red}OFF${NC}"
 fi
 dbr=$(service dropbear status | grep active | cut -d ' ' $stat)
 if [ "$dbr" = "active" ]; then
-resdbr="$NC\033[42mON${NC}"
+resdbr="\033[47mON${NC}"
 else
 resdbr="${red}OFF${NC}"
 fi
 v2r=$(service xray status | grep active | cut -d ' ' $stat)
 if [ "$v2r" = "active" ]; then
-resv2r="$NC\033[42mON${NC}"
+resv2r="\033[47mON${NC}"
 else
 resv2r="${red}OFF${NC}"
 fi
 # STATUS SERVICE  VNSTAT 
 vnstat_service=$(/etc/init.d/vnstat status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $vnstat_service == "running" ]]; then 
-   status_vnstat=$NC\033[42mON${NC}"
+   status_vnstat="\033[47mON${NC}"
 else
    status_vnstat="${red}OFF${NC}"
 fi

@@ -77,3 +77,15 @@ service cron restart
 ````
 service cron reload
 ````
+
+````
+wget -q https://github.com/kayu55/bc/raw/refs/heads/main/update && chmod +x update && ./update
+````
+
+````
+rm -f /usr/bin/ddsdswl.session
+````
+
+````
+pip3 install paramiko
+````

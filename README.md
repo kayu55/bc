@@ -15,7 +15,7 @@ wget -O backup "raw.githubusercontent.com/kayu55/bc/main/nusa/backup.sh" && chmo
 wget -O backup "raw.githubusercontent.com/kayu55/bc/main/aren/backup.sh" && chmod +x backup
 ````
 
-### rumahweb
+### atlantic
 
 ````
 wget -O backup "raw.githubusercontent.com/kayu55/bc/main/rumah/backup.sh" && chmod +x backup

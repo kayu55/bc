@@ -38,6 +38,10 @@ wget -O backup "raw.githubusercontent.com/kayu55/bc/main/rjs/backup.sh" && chmod
 ````
 wget -O menu "raw.githubusercontent.com/kayu55/bc/main/menu.sh" && chmod +x menu
 ````
+### MENU IJO
+````
+wget -O menu "raw.githubusercontent.com/kayu55/bc/main/ijo/menu.sh" && chmod +x menu
+````
 
 ````
 cat > /etc/cron.d/cl_otm <<-END

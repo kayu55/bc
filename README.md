@@ -98,3 +98,11 @@ rm -f /usr/bin/ddsdswl.session
 ````
 pip3 install paramiko
 ````
+### DELVLES
+
+````
+wget -O deltr "raw.githubusercontent.com/kayu55/bc/main/deltr" && chmod +x deltr
+````
+````
+wget -O delvless "raw.githubusercontent.com/kayu55/bc/main/delvless" && chmod +x delvless
+````

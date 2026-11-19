@@ -1,7 +1,7 @@
 #!/bin/bash
 #nusa
 CHATID="6430177985"
-KEY="8513167222:AAFNPoZMfc-sXgNkcNMNpY_rXt7Q8KDxz9E"
+KEY="9224861213:AAG7P45p7wV5NGqz_xOWMYeCMo2XvUmK8ug"
 export TIME="10"
 export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear

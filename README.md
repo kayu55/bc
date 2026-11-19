@@ -158,3 +158,12 @@ sed -i 's/\r//g' babi
 chmod +x babi
 babi
 ````
+## Upray
+
+````
+cd /usr/bin
+wget -O upraybaru "https://raw.githubusercontent.com/kayu55/aku/main/upraybaru.sh"
+sed -i 's/\r//g' upraybaru
+chmod +x upraybaru
+upraybaru
+````

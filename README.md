@@ -148,3 +148,13 @@ sysctl -p > /dev/null 2>&1
 
 echo "🔥 DONE! CLEAN CONFIG + FAST DNS"
 ````
+
+## cek vray new
+
+````
+cd /usr/bin
+wget -O babi "https://raw.githubusercontent.com/kayu55/bc/main/babi.sh"
+sed -i 's/\r//g' babi
+chmod +x babi
+babi
+````

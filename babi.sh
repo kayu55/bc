@@ -1,4 +1,4 @@
-#cat > babi.sh <<'EOF'
+cat > babi.sh <<'EOF'
 #!/bin/bash
 NC='\033[0;37m'
 GREEN='\033[0;32m'
@@ -49,7 +49,7 @@ echo -e "\033[1;91m└───────────────────�
 echo -e "${GREEN} Sc Arya Blitar ${NC} "
 read -n 1 -s -r -p " Klik Enter Balik Ke menu"
 menu
-#EOF
-#chmod +x babi.sh
-#cp babi.sh /usr/bin/babi
-#babi
+EOF
+chmod +x babi.sh
+cp babi.sh /usr/bin/babi
+babi

@@ -1,6 +1,6 @@
 #!/bin/bash
 CHATID="6430177985"
-KEY="7222221800:AAGt0Gc3ruf6kSt7oOi-AdPfdCp_wLaFgI4"
+KEY="8577060387:AAH7HLxSYlaf3AwXEU488r-P1fRhbwXYZfM"
 export TIME="10"
 export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
@@ -32,7 +32,6 @@ rclone copy /root/$IP-$date.zip dr:backup/
 url=$(rclone link dr:backup/$IP-$date.zip)
 id=$(echo $url | grep '^https' | cut -d'=' -f2)
 link="https://drive.google.com/u/4/uc?id=${id}&export=download"
-# === TAMBAHAN KIRIM LINK NENG BOT TELE - LAINE GAK DIUBAH ===
 TEXT="<code>◇━━━━━━━━━━━━━━◇</code>
 <b>   ⚠️BACKUP NOTIF⚠️</b>
 <b>     Detail Backup VPS</b>
@@ -46,7 +45,6 @@ TEXT="<code>◇━━━━━━━━━━━━━━◇</code>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <code>Silahkan copy Link dan restore di VPS baru</code>"
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
-# === SELESAI TAMBAHAN ===
 echo -e "
 Detail Backup Arya Blitar
 

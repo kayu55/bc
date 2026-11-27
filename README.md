@@ -1,36 +1,78 @@
 ### BIZNET
 
 ````
+cd /usr/bin
 wget -O backup "raw.githubusercontent.com/kayu55/bc/main/biznet/backup.sh" && chmod +x backup
+cd
+cd /usr/bin
+sed -i 's/\r$//' backup
+cp backup
+chmod +x backup
+backup
 ````
 ### NUSA
 
 ````
+cd /usr/bin
 wget -O backup "raw.githubusercontent.com/kayu55/bc/main/nusa/backup.sh" && chmod +x backup
+cd
+cd /usr/bin
+sed -i 's/\r$//' backup
+cp backup
+chmod +x backup
+backup
 ````
 
 ### AREN
 
 ````
+cd /usr/bin
 wget -O backup "raw.githubusercontent.com/kayu55/bc/main/aren/backup.sh" && chmod +x backup
+cd
+cd /usr/bin
+sed -i 's/\r$//' backup
+cp backup
+chmod +x backup
+backup
 ````
 
-### atlantic
+### indo
 
 ````
-wget -O backup "raw.githubusercontent.com/kayu55/bc/main/rumah/backup.sh" && chmod +x backup
+cd /usr/bin
+wget -O backup "raw.githubusercontent.com/kayu55/bc/main/indo/backup.sh" && chmod +x backup
+cd
+cd /usr/bin
+sed -i 's/\r$//' backup
+cp backup
+chmod +x backup
+backup
 ````
 
 ### SGDO
 
 ````
+cd /usr/bin
 wget -O backup "raw.githubusercontent.com/kayu55/bc/main/sg/backup.sh" && chmod +x backup
+cd
+cd /usr/bin
+sed -i 's/\r$//' backup
+cp backup
+chmod +x backup
+backup
 ````
 
 ### RJS
 
 ````
+cd /usr/bin
 wget -O backup "raw.githubusercontent.com/kayu55/bc/main/rjs/backup.sh" && chmod +x backup
+cd
+cd /usr/bin
+sed -i 's/\r$//' backup
+cp backup
+chmod +x backup
+backup
 ````
 
 ### MENU

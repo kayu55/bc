@@ -167,3 +167,11 @@ sed -i 's/\r//g' upraybaru
 chmod +x upraybaru
 upraybaru
 ````
+## es
+````
+cd /usr/bin
+sed -i 's/\r$//' backup
+cp backup
+chmod +x backup
+backup
+````
